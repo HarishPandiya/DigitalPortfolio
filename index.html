@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HARISH PROFILE</title>
+
+    <style>
+        .harish {
+          background-color: #3498db;
+          text-align: center;
+          border: 3px solid #3498db;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          color: #fff;
+        }
+
+        body {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#fdf1f1;
+        }
+
+        nav {
+            background-color:#c714141a;
+            color:#fff;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0.5pc;
+        }
+
+        nav ul li {
+            display: inline;
+            padding:  10px;
+        }
+
+        .sec-content {
+            background-color: #c714141a;
+            padding: 2rem;
+            margin: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #745959e1;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: lower-roman;
+            padding-left: 20px;
+        }
+    </style>
+    
+        
+</head>
+
+
+<body>
+
+    <div class="harish">
+        <h1>HARISH V</h1>
+        <h3>BCA</h3>
+    </div>  
+    
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Non Technical Skills</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="sec-content">
+            <h2><U>About Me</U></h2>
+            <p>HHello Everyone! <br> I am Harish V and now I studying 3rd BCA</p>
+        </div>
+    </section>
+
+
+    <section id="education">
+        <div class="sec-content">
+            <h2><u>Education</u></h2>
+            <ul>
+                <li>SSLC  and HSC: Sakthi Matric.Hr.Sec School.</li>
+                <li>College: SRM Trichy Arts and Science College.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="sec-content">
+            <h2><u>Non Technical Skills</u></h2>
+            <ul>
+                <li>Decision Making</li>
+                <li>Leadership</li>
+                <li>Communication</li>
+                <li>Versatile</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>Ph: 7806826577</p>
+        <p>E-mail:harishpandya980@gmail.com</p>
+        <p>&copy; 2023 HARISH V</p><br>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click',function(e){
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if(targetElement){
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
